@@ -9,9 +9,7 @@
 
     <ItemGroup>
       <Folder Include="Apis\" />
-      <Folder Include="Core\" />
       <Folder Include="Entities\GET\" />
-      <Folder Include="Entities\POST\" />
       <Folder Include="Entities\PUT\" />
     </ItemGroup>
 
