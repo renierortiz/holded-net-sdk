@@ -1,11 +1,11 @@
 using System.Text.Json.Serialization;
 
-namespace Holded.Sdk.Models.Entities.POST;
+namespace Holded.Sdk.Entities.POST;
 
 /// <summary>
 /// Contact entity to post 
 /// </summary>
-public class ContactPostEntity : HoldedEntity
+public class ContactPostEntity : EntityPostBase
 {
     /// <summary>
     /// Custom identifier.

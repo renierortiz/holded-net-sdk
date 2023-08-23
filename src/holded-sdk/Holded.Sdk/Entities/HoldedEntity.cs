@@ -1,4 +1,4 @@
-namespace Holded.Sdk.Models.Entities;
+namespace Holded.Sdk.Entities;
 
 /// <summary>
 /// Base Holded entity.

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holded.Sdk", "Holded.Sdk\Holded.Sdk.csproj", "{7EC3BB62-1153-49C9-B9CA-70FE3DC61C08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holded.Sdk.Test", "Holded.Sdk.Test\Holded.Sdk.Test.csproj", "{851A4B11-7E11-4172-9A7C-ECCC3CF8E41D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{7EC3BB62-1153-49C9-B9CA-70FE3DC61C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EC3BB62-1153-49C9-B9CA-70FE3DC61C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EC3BB62-1153-49C9-B9CA-70FE3DC61C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851A4B11-7E11-4172-9A7C-ECCC3CF8E41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851A4B11-7E11-4172-9A7C-ECCC3CF8E41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851A4B11-7E11-4172-9A7C-ECCC3CF8E41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851A4B11-7E11-4172-9A7C-ECCC3CF8E41D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

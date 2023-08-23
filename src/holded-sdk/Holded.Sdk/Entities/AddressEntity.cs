@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Holded.Sdk.Models.Entities;
+namespace Holded.Sdk.Entities;
 
 /// <summary>
 /// Address holded entity

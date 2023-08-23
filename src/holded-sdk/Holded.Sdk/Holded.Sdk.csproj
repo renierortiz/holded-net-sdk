@@ -4,12 +4,22 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Holded.Sdk.Models</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Entities\GET\" />
-      <Folder Include="Entities\PUT\" />
+        <Folder Include="Apis\AccountingApis\Constracts\" />
+        <Folder Include="Apis\CrmApis\Constracts\" />
+        <Folder Include="Apis\ProjectsApis\Constracts\" />
+        <Folder Include="Apis\TeamApis\Constracts\" />
+        <Folder Include="Entities\PUT\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0"/>
     </ItemGroup>
 
 </Project>

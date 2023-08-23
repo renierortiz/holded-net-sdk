@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Holded.Sdk.Models.Entities.RESPONSE;
+namespace Holded.Sdk.Entities.RESPONSE;
 
 /// <summary>
 /// Response on document created

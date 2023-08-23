@@ -1,4 +1,4 @@
-namespace Holded.Sdk.Models.Core;
+namespace Holded.Sdk.Core;
 
 /// <summary>
 /// Holded Api Settings
@@ -14,4 +14,15 @@ public class HoldedApiSettings
     /// Holded api base url
     /// </summary>
     public string HoldedApiBaseUrl { get; set; } = null!;
+
+    /// <summary>
+    /// Invoice api settings
+    /// </summary>
+    public Api Invoice { get; set; }
+}
+
+public class Api
+{
+    public string Path { get; set; }
+    public string Version { get; set; }
 }
