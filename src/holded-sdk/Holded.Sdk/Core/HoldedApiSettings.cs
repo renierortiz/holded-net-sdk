@@ -18,11 +18,15 @@ public class HoldedApiSettings
     /// <summary>
     /// Invoice api settings
     /// </summary>
-    public Api Invoice { get; set; }
+    public Api Invoice { get; set; } = null!;
+
+    public Api Crm { get; set; } = null!;
+    public Api Projects { get; set; } = null!;
 }
 
+// ReSharper disable once ClassNeverInstantiated.Global
 public class Api
 {
-    public string Path { get; set; }
-    public string Version { get; set; }
+    public string Path { get; set; } = null!;
+    public string Version { get; set; } = null!;
 }
