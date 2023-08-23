@@ -8,7 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Apis\" />
       <Folder Include="Entities\GET\" />
       <Folder Include="Entities\PUT\" />
     </ItemGroup>
