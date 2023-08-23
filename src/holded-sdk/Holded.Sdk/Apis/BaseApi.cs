@@ -1,12 +1,13 @@
-using System.Net;
-using System.Net.Http.Json;
-using System.Text.Json;
 using Holded.Sdk.Core;
 using Holded.Sdk.Entities.GET;
 using Holded.Sdk.Entities.POST;
 using Holded.Sdk.Entities.RESPONSE;
 using Holded.Sdk.Exceptions;
 using Microsoft.Extensions.Logging;
+using System.Net;
+using System.Net.Http.Json;
+using System.Text;
+using System.Text.Json;
 
 namespace Holded.Sdk.Apis;
 
@@ -85,7 +86,7 @@ public abstract class BaseApi
         using (HttpClient client = new HttpClient())
         {
             EnsureHeaders(client);
-            var response = await client.PostAsJsonAsync(new Uri(targetUrl), JsonSerializer.Serialize(entity));
+            var response = await client.PostAsJsonAsync<T>(targetUrl, entity);
             if (!response.IsSuccessStatusCode) await HandleApiErrorAsync(response);
             return await response.Content.ReadFromJsonAsync<U>() ??
                    throw new ResponseException("Unable to create an entity.", (int)response.StatusCode);

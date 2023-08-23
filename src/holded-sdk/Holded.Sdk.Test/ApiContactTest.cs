@@ -29,7 +29,7 @@ public class ApiContactTest
     [Fact]
     public async Task When_Create_Contact_Success()
     {
-        var entity = new ContactPostEntity();
+        var entity = new ContactPostEntity() { Name = "Renier" };
         var response = await _contactApi.Create(entity);
 
         Assert.True(response != null);
